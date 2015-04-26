@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Getting started example",
+    "description": "This extension replaces words on the page",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["background.js", "inject.js"]
+    },
+    "permissions": [
+        "<all_urls>"
+    ]
+}
