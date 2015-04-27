@@ -4,9 +4,9 @@ var injected = injected || (function(){
     // we can use from our event script.
     var methods = {};
 
-    methods.wordReplace = function() {
+    methods.swap = function() {
 
-        replace = function() {
+        replaceWord = function() {
             // Replace text.
             var hc = 6;
             var hs;
@@ -23,7 +23,7 @@ var injected = injected || (function(){
             }
         }
 
-        replace();
+        replaceWord();
 
     };
 

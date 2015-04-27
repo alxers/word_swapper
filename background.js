@@ -4,10 +4,10 @@ function injectedMethod (tab, method, callback) {
     });
 }
 
-function replace (tab) {
-    injectedMethod(tab, 'replace', function (response) {
+function swap (tab) {
+    injectedMethod(tab, 'swap', function (response) {
         return true;
     });
 }
 
-chrome.browserAction.onClicked.addListener(replace);
+chrome.browserAction.onClicked.addListener(swap);
