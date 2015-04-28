@@ -8,18 +8,17 @@ var injected = injected || (function(){
 
         replaceWord = function() {
             // Replace text.
-            var hc = 6;
-            var hs;
-            var h;
-            var k;
+            var headerCount = 6;
+            var headerElements;
+            var headerEl;
             var words = ['Happy','Sparkly','Glittery','Fun','Magical','Lovely','Cute','Charming','Amazing','Wonderful'];
-            while(hc >= 1) {
-                hs = document.getElementsByTagName('h' + hc);
-                for (k = 0; k < hs.length; k++) {
-                    h = hs[k];
-                    h.innerHTML = words[Math.floor(Math.random()*words.length)] + ' ' + h.innerHTML;
+            while(headerCount >= 1) {
+                headerElements = document.getElementsByTagName('h' + headerCount);
+                for (var i = 0; i < headerElements.length; i++) {
+                    headerEl = headerElements[i];
+                    headerEl.innerHTML = words[Math.floor(Math.random() * words.length)] + ' ' + headerEl.innerHTML;
                 }
-                hc-=1;
+                headerCount -= 1;
             }
         }
 
