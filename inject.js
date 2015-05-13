@@ -11,7 +11,7 @@ var injected = injected || (function(){
             var headerCount = 6;
             var headerElements;
             var headerEl;
-            var words = ['Happy','Sparkly','Glittery','Fun','Magical','Lovely','Cute','Charming','Amazing','Wonderful'];
+            var words = ['Happy','Sparkly','Wow','Such swapper','Much words','So git','Very hub','Charming','Amazing'];
             while(headerCount >= 1) {
                 headerElements = document.getElementsByTagName('h' + headerCount);
                 for (var i = 0; i < headerElements.length; i++) {
